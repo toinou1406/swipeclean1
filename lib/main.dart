@@ -32,7 +32,7 @@ class SwipeCleanApp extends StatelessWidget {
             elevation: 0,
             centerTitle: true,
           ),
-          cardTheme: CardTheme(
+          cardTheme: CardThemeData(
             color: AppConstants.cardColor,
             elevation: 0,
             shape: RoundedRectangleBorder(

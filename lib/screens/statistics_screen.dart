@@ -218,7 +218,7 @@ class StatisticsScreen extends StatelessWidget {
                 title: 'Précision',
                 value: '$accuracy%',
                 subtitle: 'actions réussies',
-                icon: Icons.target,
+                icon: Icons.gps_fixed,
                 color: AppConstants.swipeUpColor,
               ),
             ),

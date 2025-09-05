@@ -2,7 +2,7 @@ import 'dart:io';
 import 'package:photo_manager/photo_manager.dart';
 import 'package:permission_handler/permission_handler.dart';
 import '../models/photo.dart';
-import '../models/album.dart';
+import '../models/album.dart' as app_models;
 import 'storage_service.dart';
 
 class PhotoService {
@@ -42,7 +42,7 @@ class PhotoService {
   Future<void> importPhotosToApp() async {
     final devicePhotos = await getDevicePhotos();
     final allPhotosAlbum = (await _storageService.loadAlbums())
-        .firstWhere((album) => album.type == AlbumType.all);
+        .firstWhere((album) => album.type == app_models.AlbumType.all);
 
     for (final assetEntity in devicePhotos) {
       final file = await assetEntity.file;

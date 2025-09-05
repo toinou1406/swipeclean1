@@ -57,6 +57,9 @@ class AppConstants {
   static const String statisticsJsonFile = 'statistics.json';
   static const String trashJsonFile = 'trash.json';
   
+  // App Info
+  static const String appVersion = '1.0.0';
+  
   // SharedPreferences Keys
   static const String keyFirstLaunch = 'first_launch';
   static const String keyCurrentAlbumId = 'current_album_id';

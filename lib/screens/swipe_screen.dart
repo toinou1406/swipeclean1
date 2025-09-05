@@ -5,6 +5,7 @@ import '../providers/app_provider.dart';
 import '../constants/app_constants.dart';
 import '../models/swipe_action.dart';
 import '../models/photo.dart';
+import '../models/album.dart';
 
 class SwipeScreen extends StatefulWidget {
   const SwipeScreen({super.key});
